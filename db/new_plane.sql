@@ -3,3 +3,7 @@ insert into airplanes (planetype, passengercount) values ('717', 10);
 insert into airplanes (planetype, passengercount) values ('727', 20);
 insert into airplanes (planetype, passengercount) values ('737', 30);
 insert into airplanes (planetype, passengercount) values ('757', 500);
+
+db.new_plane(function(err, planes){
+    console.log(err, "plane added")
+});
